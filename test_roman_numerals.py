@@ -1,5 +1,5 @@
 from roman_numerals import to_roman
-import pytest
+
 
 def test_01_a_single_number():
     assert to_roman(1) == "I"
