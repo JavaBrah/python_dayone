@@ -12,5 +12,8 @@ def test_03_odd_numerals():
 
 def test_04_all_edge_cases():
     assert to_roman(944) == 'CMXLIV'
+
+def test_05_wrong_format():
+    assert to_roman(64) == 'LXIV'
     
 # add tests to cover different edge cases
