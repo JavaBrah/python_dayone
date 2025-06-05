@@ -1,6 +1,6 @@
 def _99bottles(numberOfBottles: int):
-    print(f"""{numberOfBottles} bottles of beer on the wall, 99 bottles of beer.
-        Take one down and pass it around, 98 bottles of beer on the wall.""")
+    print(f"""{numberOfBottles} bottles of beer on the wall, {numberOfBottles} bottles of beer.
+        Take one down and pass it around, {numberOfBottles - 1} bottles of beer on the wall.""")
     if numberOfBottles > 1:
         _99bottles(numberOfBottles - 1)
     else:

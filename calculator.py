@@ -24,3 +24,5 @@ if __name__ == "__main__":
 
     result = calculate(num1, num2, operation)
     print(f"Result: {result}")
+
+    
