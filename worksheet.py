@@ -72,7 +72,55 @@
 
 # print(palindrome('Noon'))
 
+# def calculate_mode(arf):
+#     dic = {}
+    
+#     for x in arf:
+#         if x not in dic:
+#             dic[x] = 1
+#         else:
+#             dic[x] += 1
+#     mode = max(dic.values())
+#     mode_list = [key for key in dic.keys() if dic[key] == mode]
+#     return mode_list
+        
+# print(calculate_mode([1, 1, 3, 4, 3]))
 
+# def pad_array(arr, length, pad=None):
+#     while len(arr) < length:
+#         arr.append(pad)
+#     return arr
+
+# print(pad_array([1, 2, 3,], 6, "b"))
+
+# def balanceParens(string):
+#     first_result = []
+#     final_result = []
+#     stack = 0
+#     for char in string:
+#         if char == '(':
+#             stack += 1
+#             first_result.append(char)
+#         elif char == ')':
+#             if stack > 0:
+#                 stack -= 1
+#                 first_result.append(char)
+#         else:
+#             first_result.append(char)
+
+#     stack = 0
+#     for char in reversed(first_result):
+#         if char == ')':
+#             stack += 1
+#             final_result.append(char)
+#         elif char == '(':
+#             if stack > 0:
+#                 stack -= 1
+#                 final_result.append(char)
+#         else:
+#             final_result.append(char)
+
+#     return ''.join(reversed(final_result))
 
 
 
@@ -94,18 +142,18 @@
 # input: ['abc', 'bcd', 'bde', 'cef']
 # output: [['abc', 'bcd'], ['bdf', 'ceg']]
 
-import string
+# import string
 
-def find_the_cipher(strings: list) -> tuple:
-    alphabet_dict = {v: i for i, v in enumerate(list(string.ascii_lowercase))}
-    string_dict = {}
-    for w in strings:
-        string_dict[w] = []
-        for c in w:
-            string_dict[w].append(alphabet_dict[c])
+# def find_the_cipher(strings: list) -> tuple:
+#     alphabet_dict = {v: i for i, v in enumerate(list(string.ascii_lowercase))}
+#     string_dict = {}
+#     for w in strings:
+#         string_dict[w] = []
+#         for c in w:
+#             string_dict[w].append(alphabet_dict[c])
     
-    return string_dict   
+#     return string_dict   
 
-print(find_the_cipher(['abc', 'bcd', 'bde', 'cef']))
+# print(find_the_cipher(['abc', 'bcd', 'bde', 'cef']))
 
 
