@@ -1,6 +1,6 @@
 
-from roman_numerals import to_roman
-from linear_search import linear_search_global
+from prac_function.roman_numerals import to_roman
+from prac_function.linear_search import linear_search_global
 
 
 def test_global_search_multiple_chars():

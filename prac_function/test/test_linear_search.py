@@ -1,4 +1,4 @@
-from linear_search import linear_search_global
+from prac_function.linear_search import linear_search_global
 
 
 # tests for linear_search_global

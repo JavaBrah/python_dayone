@@ -1,4 +1,4 @@
-import calculator
+from prac_function import calculator
 
 
 def test_add():
