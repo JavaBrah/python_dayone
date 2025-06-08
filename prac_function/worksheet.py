@@ -1,4 +1,3 @@
-from functools import reduce
 
 
 def armstrong_func(number):
@@ -13,12 +12,19 @@ def check_armstrong_func(range_num):
     return armstrong_list
 
 def anagramI_func(word, another_word):
-    word = sorted([x.lower() for x in word])
-    another_word = sorted([x.lower() for x in another_word])
-    if word == another_word:
-        return True
-    return False
+    if len(word) != len(another_word):
+        return False
+    word_list = [c.lower() for c in word]
+    for c in another_word.lower():
+        if c in word_list: 
+            word_list.remove(c)
+        else: 
+            return False
+    return True
 
+print(anagramI_func("w54rd", "dr45w"))
+
+        
 def sum_pairs_func(num_list: list, target: int) -> list:
     sum_pairs_list = []
     for i in range(len(num_list)):
@@ -115,18 +121,18 @@ def balanceParens(string):
 # input: ['abc', 'bcd', 'bde', 'cef']
 # output: [['abc', 'bcd'], ['bdf', 'ceg']]
 
-import string
+# import string
 
-def find_the_cipher(strings: list) -> tuple:
-    alphabet_dict = {v: i for i, v in enumerate(list(string.ascii_lowercase))}
-    string_dict = {}
-    for w in strings:
-        string_dict[w] = []
-        for c in w:
-            string_dict[w].append(alphabet_dict[c])
+# def find_the_cipher(strings: list) -> tuple:
+#     alphabet_dict = {v: i for i, v in enumerate(list(string.ascii_lowercase))}
+#     string_dict = {}
+#     for w in strings:
+#         string_dict[w] = []
+#         for c in w:
+#             string_dict[w].append(alphabet_dict[c])
     
-    return string_dict   
+#     return string_dict   
 
-print(find_the_cipher(['abc', 'bcd', 'bde', 'cef']))
+# print(find_the_cipher(['abc', 'bcd', 'bde', 'cef']))
 
 
